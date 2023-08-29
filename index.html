@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="bg-[#0d6efd0d] pb-10">
+
+        <section class=" w-3/4 mx-auto">
+            <h1 class="text-center text-5xl font-semibold mb-10"> Phone Hunter </h1>
+
+            <div class="flex flex-col lg:flex-row md:justify-between md:items-center">
+                <h1 class="text-2xl text-center lg:text-start font-bold mb-6 lg:mb-0"> Hot Gadgets </h1>
+                <button type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Sign
+                    up</button>
+            </div>
+
+            <div>
+                <h2 class="text-center text-2xl md:text-5xl font-bold mt-12">Apple Iphone 13 Pro Max</h2>
+                <p class="text-center text-xl text-gray-500 mt-6">There are many variations of passages of Lorem Ipsum
+                    available, but the majority <br> have suffered alteration in some form, by injected humou.</p>
+            </div>
+            <div class="flex justify-center">
+                <button type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 mt-8">Buy
+                    now</button>
+            </div>
+        </section>
+
+    </header>
+
+    <main class="mt-10">
+        <section class="w-3/4 mx-auto mt-70 relative flex flex-col items-center justify-center">
+            <h2 class="text-center text-xl md:text-3xl lg:text-5xl font-bold">Search your phone</h2>
+
+            <div class="flex flex-col items-center mt-10">
+                <form class="flex items-stretch">
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative flex items-stretch">
+                        <input type="search" id="default-search"
+                            class="flex-grow p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-l-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search your phone">
+                        <button type="submit" id="search-btn" onclick="searchBtn()"
+                            class="flex-shrink-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-r-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+       <section class="w-3/4 mx-auto mt-6">
+        <div id="phones-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        </div>
+
+        <div class="flex justify-center">
+            <button type="button"
+                class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 mt-8 hidden" id="showAll">Show All</button>
+        </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
