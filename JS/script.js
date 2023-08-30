@@ -38,10 +38,9 @@ const showAll = document.getElementById("showAll");
 }
 
 const searchBtn = () => {
+    console.log("clicked");
     const searchField = document.getElementById("default-search");
     const searchText = searchField.value;
     loadPhones(searchText);
     console.log(searchText);
-    loadPhones(searchText);
 }
-
