@@ -62,9 +62,9 @@ const showAllBtn = () => {
   searchBtn(true);
 };
 
-const showModalCont = async (info) => {
+const showModalCont = async (id) => {
 
-    const response = await fetch(`https://openapi.programming-hero.com/api/phone/${info}`);
+    const response = await fetch(`https://openapi.programming-hero.com/api/phone/${id}`);
     const data = await response.json();
     console.log(data);
 
@@ -79,7 +79,7 @@ const showModalCont = async (info) => {
           <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
   
             <div class="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t">
-              <h3 class="text-3xl font-semibold"></h3>
+              <h3 class="text-3xl font-semibold">${data.phone_name}</h3>
               <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" data-modal-hide="showDetailsModal">
                 <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">×</span>
               </button>
