@@ -34,7 +34,6 @@ const displayPhones = (phones, isShowAll) => {
                     <p class="text-center font-bold text-2xl"> 500$ </p>
                     <div class="flex justify-center">
                     <button type="button" onclick="showModalCont()" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 mt-2">Show Details</button>
-
                     </div>
                 </div>
     `;
@@ -63,18 +62,11 @@ const showAllBtn = () => {
   searchBtn(true);
 };
 
-// const showDetails = async (id) => {
-//     console.log(id);
-//     const response = await fetch(`https://openapi.programming-hero.com/api/phone/${id}`);
-//     const data = await response.json();
-//     console.log(data);
-// }
-
 const showModalCont = async (info) => {
 
     const response = await fetch(`https://openapi.programming-hero.com/api/phone/${info}`);
     const data = await response.json();
-    console.log(data[data]);
+    console.log(data);
 
     const modalContainer = document.getElementById('modal-container');
 
